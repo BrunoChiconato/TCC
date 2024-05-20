@@ -11,17 +11,16 @@ Este repositório contém um script para análise de palavras em arquivos PDF, i
 
 Certifique-se de ter as bibliotecas necessárias instaladas. Você pode instalá-las usando `pip`:
 
+## Uso
+- Upload do Arquivo PDF: Faça o upload do arquivo PDF que deseja analisar.
+- Extração de Texto: O texto será extraído do PDF.
+- Contagem das Palavras Mais Comuns: As 10 palavras mais frequentes serão identificadas.
+- Análise de Co-ocorrências: Para cada uma das 10 palavras mais frequentes, serão identificadas as 5 palavras que mais frequentemente ocorrem próximas a elas.
+- Exibição dos Resultados: Os resultados serão exibidos no console.
+
 ```bash
 !pip install PyPDF2 nltk
 
-## Uso
-Passo a Passo
-Upload do Arquivo PDF: Faça o upload do arquivo PDF que deseja analisar.
-Extração de Texto: O texto será extraído do PDF.
-Contagem das Palavras Mais Comuns: As 10 palavras mais frequentes serão identificadas.
-Análise de Co-ocorrências: Para cada uma das 10 palavras mais frequentes, serão identificadas as 5 palavras que mais frequentemente ocorrem próximas a elas.
-Exibição dos Resultados: Os resultados serão exibidos no console.
-Script
 import PyPDF2
 import nltk
 from nltk.corpus import stopwords
