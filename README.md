@@ -258,7 +258,10 @@ plt.show()
 ```
 
 
-Com esta formatação, a imagem do gráfico será exibida juntamente com o código e as explicações no seu README.md. Certifique-se de que o link para a imagem está correto e que a imagem foi carregada corretamente no repositório do GitHub.
+### Resultado
+
+![Gráfico de Frequência das Palavras](https://github.com/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png)
+
 
 
 
