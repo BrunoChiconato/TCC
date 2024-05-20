@@ -126,6 +126,86 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 - Filtragem: Remoção de palavras não alfanuméricas e stopwords para focar em palavras significativas.
 - Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
 
+## Resultados
+- Palavra: desenvolvimento - Ocorrências: 273
+Top 5 palavras que acompanham:
+ - países: 146
+ - sustentável: 117
+ - pequenos: 42
+ - desenvolvidos: 39
+ - estados: 37
+   
+Palavra: países - Ocorrências: 185
+Top 5 palavras que acompanham:
+ - desenvolvimento: 146
+ - desenvolvidos: 93
+ - menos: 75
+ - pequenos: 33
+ - estados: 32
+   
+Palavra: sustentável - Ocorrências: 138
+Top 5 palavras que acompanham:
+ - desenvolvimento: 117
+ - promover: 21
+ - objetivos: 20
+ - países: 18
+ - recursos: 17
+   
+Palavra: agenda - Ocorrências: 70
+Top 5 palavras que acompanham:
+ - desenvolvimento: 23
+ - ação: 18
+ - implementação: 17
+ - nova: 16
+ - objetivos: 15
+   
+Palavra: incluindo - Ocorrências: 69
+Top 5 palavras que acompanham:
+ - desenvolvimento: 21
+ - países: 18
+ - sustentável: 7
+ - pobreza: 6
+ - formas: 6
+   
+Palavra: 2030 - Ocorrências: 64
+Top 5 palavras que acompanham:
+ - acesso: 13
+ - reduzir: 11
+ - garantir: 11
+ - sustentável: 10
+ - desenvolvimento: 9
+   
+Palavra: global - Ocorrências: 60
+Top 5 palavras que acompanham:
+ - desenvolvimento: 16
+ - sustentável: 14
+ - parceria: 13
+ - nível: 11
+ - implementação: 11
+   
+Palavra: desenvolvidos - Ocorrências: 55
+Top 5 palavras que acompanham:
+ - países: 93
+ - menos: 43
+ - desenvolvimento: 39
+ - estados: 21
+ - pequenos: 19
+   
+Palavra: menos - Ocorrências: 53
+Top 5 palavras que acompanham:
+ - países: 75
+ - desenvolvidos: 43
+ - desenvolvimento: 36
+ - pequenos: 20
+ - estados: 12
+Palavra: nacionais - Ocorrências: 52
+Top 5 palavras que acompanham:
+ - desenvolvimento: 20
+ - políticas: 14
+ - prioridades: 10
+ - níveis: 9
+ - acordo: 9
+
 
 # Geração do gráfico
 
