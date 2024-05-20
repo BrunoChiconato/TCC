@@ -126,7 +126,7 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 - Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
 
 
-# Geração do gráfico após análise das palavras no documento "Agenda 2030"
+# Geração do gráfico
 
 Esta seção contém um script para a criação de um gráfico de barras para visualizar as palavras mais comuns e suas co-ocorrências.
 
