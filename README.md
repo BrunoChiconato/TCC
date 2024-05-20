@@ -258,7 +258,7 @@ plt.show()
 ```
 
 
-### Resultado
+## Resultado
 
 ![Gráfico de Frequência das Palavras](https://github.com/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png)
 
