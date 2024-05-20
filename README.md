@@ -258,7 +258,8 @@ plt.show()
 ```
 
 ### Notas:
-`https://github.com/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png`
+`https://raw.githubusercontent.com/BrunoChiconato/TCC/main/grafico-tcc-emanuelle-flemming.png`
+https://raw.githubusercontent.com/BrunoChiconato/TCC/main/grafico-tcc-emanuelle-flemming.png
 
 
 
