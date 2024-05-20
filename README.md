@@ -128,7 +128,7 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 
 # Geração do gráfico após análise das palavras no documento "Agenda 2030"
 
-Este repositório contém um script para a análise da frequência de palavras em um arquivo PDF, incluindo a criação de um gráfico de barras para visualizar as palavras mais comuns e suas co-ocorrências.
+Esta seção contém um script para a criação de um gráfico de barras para visualizar as palavras mais comuns e suas co-ocorrências.
 
 ## Requisitos
 
