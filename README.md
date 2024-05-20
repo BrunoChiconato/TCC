@@ -125,4 +125,138 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 - Filtragem: Remoção de palavras não alfanuméricas e stopwords para focar em palavras significativas.
 - Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
 
+
+# Geração do gráfico de Frequência de Palavras em PDF
+
+Este repositório contém um script para a análise da frequência de palavras em um arquivo PDF, incluindo a criação de um gráfico de barras para visualizar as palavras mais comuns e suas co-ocorrências.
+
+## Requisitos
+
+- Python 3.x
+- Bibliotecas: `matplotlib`, `seaborn`, `pandas`
+
+## Instalação
+
+Certifique-se de ter as bibliotecas necessárias instaladas. Você pode instalá-las usando `pip`:
+
+## Uso
+- Criação de Dados: Inicialize os dados das palavras e suas frequências.
+- Criação do DataFrame: Converta os dados em um DataFrame do pandas.
+- Configuração do Gráfico: Configure o gráfico de barras usando seaborn e matplotlib.
+- Ajustes de Estilo e Títulos: Personalize o estilo e os títulos do gráfico.
+- Exibição do Gráfico: Exiba o gráfico final.
+
+```bash
+!pip install matplotlib seaborn pandas
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+# Dados fornecidos
+data = {
+    'Palavra': ['desenvolvimento', 'desenvolvimento', 'desenvolvimento', 'desenvolvimento', 'desenvolvimento',
+                'países', 'países', 'países', 'países', 'países',
+                'sustentável', 'sustentável', 'sustentável', 'sustentável', 'sustentável',
+                'agenda', 'agenda', 'agenda', 'agenda', 'agenda',
+                'incluindo', 'incluindo', 'incluindo', 'incluindo', 'incluindo',
+                '2030', '2030', '2030', '2030', '2030',
+                'global', 'global', 'global', 'global', 'global',
+                'desenvolvidos', 'desenvolvidos', 'desenvolvidos', 'desenvolvidos', 'desenvolvidos',
+                'menos', 'menos', 'menos', 'menos', 'menos',
+                'nacionais', 'nacionais', 'nacionais', 'nacionais', 'nacionais'],
+    'Acompanha': ['países', 'sustentável', 'pequenos', 'desenvolvidos', 'estados',
+                  'desenvolvimento', 'desenvolvidos', 'menos', 'pequenos', 'estados',
+                  'desenvolvimento', 'promover', 'objetivos', 'países', 'recursos',
+                  'desenvolvimento', 'ação', 'implementação', 'nova', 'objetivos',
+                  'desenvolvimento', 'países', 'sustentável', 'pobreza', 'formas',
+                  'acesso', 'reduzir', 'garantir', 'sustentável', 'desenvolvimento',
+                  'desenvolvimento', 'sustentável', 'parceria', 'nível', 'implementação',
+                  'países', 'menos', 'desenvolvimento', 'estados', 'pequenos',
+                  'países', 'desenvolvidos', 'desenvolvimento', 'pequenos', 'estados',
+                  'desenvolvimento', 'políticas', 'prioridades', 'níveis', 'acordo'],
+    'Frequência': [146, 117, 42, 39, 37,
+                   146, 93, 75, 33, 32,
+                   117, 21, 20, 18, 17,
+                   23, 18, 17, 16, 15,
+                   21, 18, 7, 6, 6,
+                   13, 11, 11, 10, 9,
+                   16, 14, 13, 11, 11,
+                   93, 43, 39, 21, 19,
+                   75, 43, 36, 20, 12,
+                   20, 14, 10, 9, 9]
+}
+
+# Criação do DataFrame
+df = pd.DataFrame(data)
+
+# Configuração do gráfico
+plt.figure(figsize=(10, 15))
+sns.set(style="whitegrid")
+sns.barplot(x="Frequência", y="Acompanha", hue="Palavra", data=df, palette="tab10")
+
+# Ajustes de estilo e títulos
+plt.title("Frequência das Palavras que Acompanham as Top 10 Palavras Mais Comuns")
+plt.xlabel("Frequência")
+plt.ylabel("Palavras que Acompanham")
+plt.legend(title="Top 10 Palavras", bbox_to_anchor=(1.05, 1), loc='upper left')
+
+# Exibição do gráfico
+plt.tight_layout()
+plt.show()
+```
+
+# Explicação do Código
+## Importações
+- matplotlib.pyplot: Biblioteca para criação de gráficos e visualizações.
+- seaborn: Biblioteca baseada em matplotlib para criar gráficos estatísticos atraentes e informativos.
+- pandas: Biblioteca para manipulação e análise de dados, especialmente útil para estruturas de dados como DataFrames.
+
+## Dados Fornecidos
+Os dados fornecidos são um dicionário com três listas:
+
+- 'Palavra': Lista das palavras principais que aparecem nas análises.
+- 'Acompanha': Lista das palavras que acompanham as palavras principais.
+- 'Frequência': Frequência com que as palavras de 'Acompanha' aparecem junto com as palavras de 'Palavra'.
+
+## Criação do DataFrame
+Os dados são convertidos em um DataFrame do pandas, que é uma estrutura de dados bidimensional com rótulos de eixo (linhas e colunas).
+```bash
+# Criação do DataFrame
+df = pd.DataFrame(data)
+```
+
+## Configuração do Gráfico
+- Figura: Define o tamanho da figura do gráfico.
+- Estilo: Define o estilo do gráfico como 'whitegrid' para um fundo de grade branco.
+- Gráfico de Barras: Cria um gráfico de barras com a frequência das palavras que acompanham as palavras principais, usando a biblioteca seaborn.
+```bash
+# Configuração do gráfico
+plt.figure(figsize=(10, 15))
+sns.set(style="whitegrid")
+sns.barplot(x="Frequência", y="Acompanha", hue="Palavra", data=df, palette="tab10")
+```
+
+## Ajustes de Estilo e Títulos
+- Título: Define o título do gráfico.
+- Rótulos dos Eixos: Define os rótulos dos eixos X e Y.
+- Legenda: Configura a posição e o título da legenda.
+```bash
+# Ajustes de estilo e títulos
+plt.title("Frequência das Palavras que Acompanham as Top 10 Palavras Mais Comuns")
+plt.xlabel("Frequência")
+plt.ylabel("Palavras que Acompanham")
+plt.legend(title="Top 10 Palavras", bbox_to_anchor=(1.05, 1), loc='upper left')
+```
+
+## Exibição do Gráfico
+O método plt.tight_layout() ajusta automaticamente os parâmetros de subplots para que o subplot se ajuste na figura da área de exibição. plt.show() exibe o gráfico.
+```bash
+# Exibição do gráfico
+plt.tight_layout()
+plt.show()
+```
+
 Este README.md fornece uma explicação detalhada do script, instruções de uso, requisitos e a lógica por trás da escolha das palavras e da análise de co-ocorrências.
+
+
