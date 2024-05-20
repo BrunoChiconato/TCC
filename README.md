@@ -257,12 +257,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-### Notas:
-`https://raw.githubusercontent.com/BrunoChiconato/TCC/main/grafico-tcc-emanuelle-flemming.png`
-https://raw.githubusercontent.com/BrunoChiconato/TCC/main/grafico-tcc-emanuelle-flemming.png
 
+Com esta formatação, a imagem do gráfico será exibida juntamente com o código e as explicações no seu README.md. Certifique-se de que o link para a imagem está correto e que a imagem foi carregada corretamente no repositório do GitHub.
 
-
-Este README.md fornece uma explicação detalhada do script, instruções de uso, requisitos e a lógica por trás da escolha das palavras e da análise de co-ocorrências.
 
 
