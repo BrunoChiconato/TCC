@@ -12,9 +12,9 @@ Este repositório contém um script para análise de palavras em arquivos PDF, i
 Certifique-se de ter as bibliotecas necessárias instaladas. Você pode instalá-las usando `pip`:
 
 ```bash
-pip install PyPDF2 nltk
+!pip install PyPDF2 nltk
 
-Uso
+## Uso
 Passo a Passo
 Upload do Arquivo PDF: Faça o upload do arquivo PDF que deseja analisar.
 Extração de Texto: O texto será extraído do PDF.
