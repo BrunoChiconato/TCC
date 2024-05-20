@@ -257,6 +257,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+### Notas:
+- Substitua `/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png`
+
+
+
 Este README.md fornece uma explicação detalhada do script, instruções de uso, requisitos e a lógica por trás da escolha das palavras e da análise de co-ocorrências.
 
 
