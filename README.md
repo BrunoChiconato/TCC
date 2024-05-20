@@ -1,4 +1,4 @@
-# Análise de Palavras em PDF
+# Análise de Palavras no documento "Agenda 2030"
 
 Este repositório contém um script para análise de palavras em arquivos PDF, incluindo a contagem das palavras mais comuns e a análise de co-ocorrências.
 
@@ -126,7 +126,7 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 - Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
 
 
-# Geração do gráfico de Frequência de Palavras em PDF
+# Geração do gráfico após análise das palavras no documento "Agenda 2030"
 
 Este repositório contém um script para a análise da frequência de palavras em um arquivo PDF, incluindo a criação de um gráfico de barras para visualizar as palavras mais comuns e suas co-ocorrências.
 
