@@ -93,20 +93,20 @@ if __name__ == "__main__":
   
 Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os recursos necessários do NLTK sejam baixados se ainda não estiverem disponíveis.
 
-## Função extract_text_from_pdf
+## Função "extract_text_from_pdf"
 - Abertura do PDF: Abre o arquivo PDF no caminho especificado em modo de leitura binária.
 - Leitura do PDF: Cria um objeto PdfReader para ler o PDF.
 - Extração de Texto: Inicializa uma string vazia e concatena o texto extraído de cada página do PDF.
 - Retorno do Texto: Retorna o texto completo extraído do PDF.
   
-## Função count_words
+## Função "count_words"
 - Stopwords: Define um conjunto de palavras a serem ignoradas, incluindo as stopwords em português e as palavras "sobre", "todos" e "todas".
 - Tokenização: Divide o texto em palavras individuais, convertendo tudo para minúsculas.
 - Filtragem de Palavras: Remove palavras que não são alfanuméricas e as que estão na lista de stopwords.
 - Contagem de Palavras: Conta a frequência de cada palavra filtrada.
 - Top 10 Palavras: Retorna as 10 palavras mais comuns e suas frequências.
 
-## Função find_cooccurring_words
+## Função "find_cooccurring_words"
 - Stopwords: Define o mesmo conjunto de stopwords que a função count_words.
 - Tokenização e Filtragem: Realiza a tokenização e filtragem das palavras, como na função count_words.
 - Inicialização de Coocorrências: Cria um dicionário para armazenar contadores de palavras co-ocorrentes para cada uma das palavras principais (top_words).
