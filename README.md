@@ -80,40 +80,47 @@ if __name__ == "__main__":
                 print(f" - {co_word}: {co_count}")
     else:
         print("Nenhum arquivo carregado.")
-Explicação do Código
-Importações e Downloads
-PyPDF2: Biblioteca usada para ler e extrair texto de arquivos PDF.
-nltk: Natural Language Toolkit, uma biblioteca usada para processamento de linguagem natural.
-stopwords: Lista de palavras comuns (como "e", "o", "a") que geralmente são removidas na análise de texto.
-Counter: Classe do módulo collections que conta a frequência dos elementos em uma lista.
-files: Módulo do Google Colab para upload de arquivos.
+
+```
+
+# Explicação do Código
+## Importações e Downloads
+- PyPDF2: Biblioteca usada para ler e extrair texto de arquivos PDF.
+- nltk: Natural Language Toolkit, uma biblioteca usada para processamento de linguagem natural.
+- stopwords: Lista de palavras comuns (como "e", "o", "a") que geralmente são removidas na análise de texto.
+- Counter: Classe do módulo collections que conta a frequência dos elementos em uma lista.
+- files: Módulo do Google Colab para upload de arquivos.
+  
 Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os recursos necessários do NLTK sejam baixados se ainda não estiverem disponíveis.
 
-Função extract_text_from_pdf
-Abertura do PDF: Abre o arquivo PDF no caminho especificado em modo de leitura binária.
-Leitura do PDF: Cria um objeto PdfReader para ler o PDF.
-Extração de Texto: Inicializa uma string vazia e concatena o texto extraído de cada página do PDF.
-Retorno do Texto: Retorna o texto completo extraído do PDF.
-Função count_words
-Stopwords: Define um conjunto de palavras a serem ignoradas, incluindo as stopwords em português e as palavras "sobre", "todos" e "todas".
-Tokenização: Divide o texto em palavras individuais, convertendo tudo para minúsculas.
-Filtragem de Palavras: Remove palavras que não são alfanuméricas e as que estão na lista de stopwords.
-Contagem de Palavras: Conta a frequência de cada palavra filtrada.
-Top 10 Palavras: Retorna as 10 palavras mais comuns e suas frequências.
-Função find_cooccurring_words
-Stopwords: Define o mesmo conjunto de stopwords que a função count_words.
-Tokenização e Filtragem: Realiza a tokenização e filtragem das palavras, como na função count_words.
-Inicialização de Coocorrências: Cria um dicionário para armazenar contadores de palavras co-ocorrentes para cada uma das palavras principais (top_words).
-Atualização de Coocorrências: Para cada palavra na lista filtrada, se a palavra estiver entre as top_words, um contexto de 5 palavras antes e depois é considerado. As palavras nesse contexto são contadas como co-ocorrências.
-Top 5 Coocorrências: Para cada palavra principal, as 5 palavras que mais co-ocorrem são retornadas.
-Execução Principal
-Upload do Arquivo: Solicita ao usuário que carregue um arquivo PDF.
-Extração de Texto: Extrai o texto do PDF carregado.
-Contagem das Palavras Mais Comuns: Obtém as 10 palavras mais frequentes no texto.
-Co-ocorrências das Palavras: Encontra as 5 palavras que mais frequentemente ocorrem próximas de cada uma das top 10 palavras.
-Impressão dos Resultados: Exibe as top 10 palavras e as 5 palavras que mais frequentemente co-ocorrem com cada uma delas.
-Diretrizes para Escolha das Palavras
-Stopwords: Palavras comuns que não agregam valor na análise de conteúdo são removidas. Adicionalmente, palavras específicas como "sobre", "todos" e "todas" foram excluídas devido à sua alta frequência e baixa relevância semântica.
+## Função extract_text_from_pdf
+- Abertura do PDF: Abre o arquivo PDF no caminho especificado em modo de leitura binária.
+- Leitura do PDF: Cria um objeto PdfReader para ler o PDF.
+- Extração de Texto: Inicializa uma string vazia e concatena o texto extraído de cada página do PDF.
+- Retorno do Texto: Retorna o texto completo extraído do PDF.
+  
+## Função count_words
+- Stopwords: Define um conjunto de palavras a serem ignoradas, incluindo as stopwords em português e as palavras "sobre", "todos" e "todas".
+- Tokenização: Divide o texto em palavras individuais, convertendo tudo para minúsculas.
+- Filtragem de Palavras: Remove palavras que não são alfanuméricas e as que estão na lista de stopwords.
+- Contagem de Palavras: Conta a frequência de cada palavra filtrada.
+- Top 10 Palavras: Retorna as 10 palavras mais comuns e suas frequências.
+
+## Função find_cooccurring_words
+- Stopwords: Define o mesmo conjunto de stopwords que a função count_words.
+- Tokenização e Filtragem: Realiza a tokenização e filtragem das palavras, como na função count_words.
+- Inicialização de Coocorrências: Cria um dicionário para armazenar contadores de palavras co-ocorrentes para cada uma das palavras principais (top_words).
+- Atualização de Coocorrências: Para cada palavra na lista filtrada, se a palavra estiver entre as top_words, um contexto de 5 palavras antes e depois é considerado. As palavras nesse contexto são contadas como co-ocorrências.
+- Top 5 Coocorrências: Para cada palavra principal, as 5 palavras que mais co-ocorrem são retornadas.
+
+## Execução Principal
+- Upload do Arquivo: Solicita ao usuário que carregue um arquivo PDF.
+- Extração de Texto: Extrai o texto do PDF carregado.
+- Contagem das Palavras Mais Comuns: Obtém as 10 palavras mais frequentes no texto.
+- Co-ocorrências das Palavras: Encontra as 5 palavras que mais frequentemente ocorrem próximas de cada uma das top 10 palavras.
+- Impressão dos Resultados: Exibe as top 10 palavras e as 5 palavras que mais frequentemente co-ocorrem com cada uma delas.
+- Diretrizes para Escolha das Palavras
+- Stopwords: Palavras comuns que não agregam valor na análise de conteúdo são removidas. Adicionalmente, palavras específicas como "sobre", "todos" e "todas" foram excluídas devido à sua alta frequência e baixa relevância semântica.
 Tokenização: Separação do texto em palavras individuais para análise.
 Filtragem: Remoção de palavras não alfanuméricas e stopwords para focar em palavras significativas.
 Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
