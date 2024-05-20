@@ -1,6 +1,6 @@
 # Análise de Palavras no documento "Agenda 2030"
 
-Este repositório contém um script para análise de palavras em arquivos PDF, incluindo a contagem das palavras mais comuns e a análise de co-ocorrências.
+Esta seção contém um script para análise de palavras em arquivos PDF, incluindo a contagem das palavras mais comuns e a análise de co-ocorrências.
 
 ## Requisitos
 
