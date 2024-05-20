@@ -258,7 +258,7 @@ plt.show()
 ```
 
 ### Notas:
-- Substitua `/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png`
+`https://github.com/BrunoChiconato/TCC/blob/main/grafico-tcc-emanuelle-flemming.png`
 
 
 
