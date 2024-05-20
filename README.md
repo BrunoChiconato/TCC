@@ -121,8 +121,8 @@ Os comandos nltk.download('stopwords') e nltk.download('punkt') garantem que os 
 - Impressão dos Resultados: Exibe as top 10 palavras e as 5 palavras que mais frequentemente co-ocorrem com cada uma delas.
 - Diretrizes para Escolha das Palavras
 - Stopwords: Palavras comuns que não agregam valor na análise de conteúdo são removidas. Adicionalmente, palavras específicas como "sobre", "todos" e "todas" foram excluídas devido à sua alta frequência e baixa relevância semântica.
-Tokenização: Separação do texto em palavras individuais para análise.
-Filtragem: Remoção de palavras não alfanuméricas e stopwords para focar em palavras significativas.
-Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
+- Tokenização: Separação do texto em palavras individuais para análise.
+- Filtragem: Remoção de palavras não alfanuméricas e stopwords para focar em palavras significativas.
+- Co-ocorrências: Análise do contexto das palavras principais para identificar associações frequentes, fornecendo uma visão sobre como as palavras são usadas em conjunto no texto.
 
 Este README.md fornece uma explicação detalhada do script, instruções de uso, requisitos e a lógica por trás da escolha das palavras e da análise de co-ocorrências.
